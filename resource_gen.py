@@ -5,9 +5,9 @@ logger = logging.getLogger(__name__)
 
 def create_endpoint(context):
     endpoint = {
-        url: 'https://demo.resouces',
-        user: 'scotty',
-        password: '********',
+        'url': 'https://demo.resouces',
+        'user': 'scotty',
+        'password': '********',
     }
     return endpoint
 
