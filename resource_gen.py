@@ -2,6 +2,16 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
+def create_endpoint(context):
+    endpoint = {
+        url: 'https://demo.resouces',
+        user: 'scotty',
+        password: '********',
+    }
+    return endpoint
+
+
 def deploy(context):
     name = context.v1.self.name
     print 'Hey there,'
