@@ -13,8 +13,8 @@ def create_endpoint(context):
 
 
 def deploy(context):
-    name = context.v1.self.name
+    name = context.v1.resource.name
     print 'Hey there,'
-    print 'my name is {name} '.format(name=name),
+    print 'my name is {} '.format(name),
     print 'and I\'m deploy a dummy resource with my config:'
-    print '{config}'.format(config=context.v1.self.config)
+    print '{}'.format(context.v1.resource.config)
