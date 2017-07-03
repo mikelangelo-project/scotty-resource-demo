@@ -11,7 +11,6 @@ def endpoint(context):
     }
     return endpoint
 
-
 def deploy(context):
     name = context.v1.resource.name
     print 'Hey there,'
