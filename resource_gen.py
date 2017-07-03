@@ -3,7 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def create_endpoint(context):
+def endpoint(context):
     endpoint = {
         'url': 'https://demo.resouces',
         'user': 'scotty',
@@ -18,3 +18,6 @@ def deploy(context):
     print 'my name is {} '.format(name),
     print 'and I\'m deploy a dummy resource with my config:'
     print '{}'.format(context.v1.resource.config)
+    
+def clean(context):
+    pass
